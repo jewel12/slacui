@@ -1,24 +1,24 @@
 # Slacui
 
-TODO: Write a gem description
-
 ## Installation
 
-Add this line to your application's Gemfile:
+    $ gem build slacui.gemspec
+    $ gem install slacui-(VERSION).gem
 
-    gem 'slacui'
+Set your API auth token to $SLACK_AUTH_TOKEN, see https://api.slack.com/
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install slacui
+Ex.
+    $ echo 'export SLACK_AUTH_TOKEN=YOUR_TOKEN' >> ~/.bashrc
 
 ## Usage
 
-TODO: Write usage instructions here
+### Channel List
+
+    $ slacui channnels
+
+### Read Channel
+
+    $ slacui read CHANNEL_NAME
 
 ## Contributing
 
