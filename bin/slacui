@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require 'slacui'
+require 'slacui/cmd'
+require 'slacui/channel'
+require 'slack'
+require 'thor'
+
+class SlacuiCommand < Thor
+  desc 'channels', 'Show a list of channels'
+  def channels
+    Slacui::Cmd.channels
+  end
+
+  desc 'read [CHANNEL]', 'Read the channel'
+  def read(channel_name)
+    Slacui::Cmd.read(channel_name)
+  end
+end
+
+SlacuiCommand.start
