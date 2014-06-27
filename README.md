@@ -7,8 +7,7 @@
 
 Set your API auth token to $SLACK_AUTH_TOKEN, see https://api.slack.com/
 
-Ex.
-    $ echo 'export SLACK_AUTH_TOKEN=YOUR_TOKEN' >> ~/.bashrc
+Ex. `$ echo 'export SLACK_AUTH_TOKEN=YOUR_TOKEN' >> ~/.bashrc`
 
 ## Usage
 
